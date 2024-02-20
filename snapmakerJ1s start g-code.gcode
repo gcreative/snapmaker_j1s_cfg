@@ -62,7 +62,7 @@ G0 Z40.0 F10000 ; set bed to middle position with fast feedrade
   M83 ;override G90 and put the E axis into relative mode independent of the other axes.
   ;M106 S64 ;fan on
   G0 X-8 F5000 ;travel to extrude position
-  G1 E5 F100 ;extrude a little for checking that there is no clogging
+  G1 E5 ;extrude a little for checking that there is no clogging
   G0 X-12 ;park to silicon rubber
   ;M107 ;fan off
 {endif}
@@ -71,7 +71,7 @@ G0 Z40.0 F10000 ; set bed to middle position with fast feedrade
   M83 ;override G90 and put the E axis into relative mode independent of the other axes.
   ;M106 S64 ;fan on
   G0 X334 F5000 ;travel to extrude position
-  G1 E5 F100 ;extrude a little for checking that there is no clogging
+  G1 E5 ;extrude a little for checking that there is no clogging
   G0 X338 ;park to silicon rubber
   ;M107 ;fan off
 {endif}
